@@ -1,0 +1,317 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.BB10 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    min-height: 100vh;
+}
+
+.BB11 {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.image-BB10 {
+    grid-row: 1 / -1;
+    position: relative;
+}
+
+.image-BB10 img {
+     margin-left: 120%;
+    width: 170%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.image-BB10 img:hover {
+    transform: scale(1.02);
+   
+    
+}
+
+.BB11-text {
+    padding: 0 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.title {
+    display: center;
+     white-space: nowrap;
+     margin-left: 120%;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #f5c518;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    
+}
+
+.subtitle {
+    margin-left: 120%;
+    width: 200%;
+    height: auto;
+    
+    font-size: 3rem;
+    font-weight: 600;
+    color: #f5c518;
+    margin-bottom: 15px;
+    border-bottom: 5px solid #f5c518;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.section p {
+    margin-left: 120%;
+    width: 200%;
+    height: auto;
+ 
+    font-size: 1.1rem;
+    line-height: 1.8;
+     padding: 15px;
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.BB10 > p {
+    display: inline-block;
+    background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+    padding: 15px 25px;
+    margin: 10px 15px 10px 0;
+    border-radius: 12px;
+    border: 1px solid #444;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.BB10 > p:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.BB10 > p b {
+    font-size: 1.4rem;
+    color: #f5c518;
+    margin-right: 8px;
+}
+
+.BB10 > p sub {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    vertical-align: baseline;
+    margin-left: 5px;
+}
+
+
+.ingredients video {
+   margin-left: 120%; 
+    display: block;
+    width: 200%;
+    height: 400px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+
+.price-box {
+    background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #444;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    margin-top: 30px;
+    display: flex; /* Use flexbox for cast members */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Space between cast members */
+}
+
+.price-box::before {
+    content: "Cast";
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f5c518;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f5c518;
+    padding-bottom: 10px;
+    width: 100%; /* Ensure title takes full width */
+    text-align: center;
+}
+
+.actor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 150px; /* Fixed width for each actor card */
+}
+
+.actor-card img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.actor-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(245, 197, 24, 0.3);
+}
+
+.actor-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f5c518;
+    margin-bottom: 5px;
+}
+
+.actor-card p {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    font-style: italic;
+}
+
+
+@media (max-width: 1024px) {
+    .content {
+        grid-template-columns: 1fr; /* Stack image and content on smaller laptops/tablets */
+        gap: 30px;
+    }
+    
+    .image-BB10 {
+        grid-row: auto;
+        text-align: center;
+    }
+    
+    .image-BB10 img {
+        max-width: 300px;
+    }
+    
+    .title {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .BB10 {
+        padding: 15px;
+    }
+    
+    .BB11-text {
+        padding: 0;
+    }
+    
+    .ingredients iframe {
+        height: 300px; /* Adjust height for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.6rem;
+    }
+    
+    .ingredients iframe {
+        height: 250px; /* Further adjust height for phones */
+    }
+    
+    .actor-card {
+        width: 120px;
+    }
+    
+    .actor-card img {
+        width: 100px;
+        height: 125px;
+    }
+    
+    .actor-card h4 {
+        font-size: 1rem;
+    }
+    
+    .actor-card p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .BB10 > p {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+    
+    .price-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .actor-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .actor-card img {
+        width: 120px;
+        height: 150px;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+::selection {
+    background-color: #f5c518;
+    color: #000;
+}
+
+
+iframe:focus,
+img:focus {
+    outline: 2px solid #f5c518;
+    outline-offset: 2px;
+}
+
