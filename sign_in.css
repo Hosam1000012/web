@@ -1,0 +1,123 @@
+/* sign_in.css */
+
+.main-content {
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.signin-section h2 {
+    color: #f5c518;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.signin-section h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #f5c518;
+    border-radius: 2px;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #f5c518;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #f5c518;
+    box-shadow: 0 0 0 3px rgba(245, 197, 24, 0.3);
+    outline: none;
+}
+
+.signin-button {
+    background-color: #f5c518;
+    color: #000000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+.signin-button:hover {
+    background-color: #e0b000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(245, 197, 24, 0.4);
+}
+
+.signin-button:active {
+    transform: translateY(-1px);
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #c0c0c0;
+}
+
+.signup-link a {
+    color: #f5c518;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Ensure footer links highlight the current page */
+.footer-nav .nav-link.current-page {
+    background-color: #f5c518;
+    color: #000000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(245, 197, 24, 0.4);
+    border: 1px solid #f5c518;
+}
+
+.footer-nav .nav-link.current-page::after {
+    width: 80%;
+    background: #000000;
+}
+

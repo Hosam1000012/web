@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Rotten Potato</title>
+    <link rel="stylesheet" href="/Style.css" />
+    <link rel="stylesheet" href="contact_us.css" />
+  </head>
+  <body>
+    <h1>Rotten Potato 🥔</h1>
+    <main class="main-content">
+      <section class="contact-section">
+        <h2>Get In Touch</h2>
+        <p class="contact-subtitle">We'd love to hear from you! Send us a message and we'll respond as soon as possible.</p>
+        
+        <div class="contact-container">
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+              </div>
+
+              <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                  <option value="">Select a category...</option>
+                  <option value="feedback">General Feedback</option>
+                  <option value="bug">Report a Bug</option>
+                  <option value="feature">Feature Request</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us what's on your mind..." rows="6" required></textarea>
+                <span class="char-count">0 / 500</span>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="subscribe" name="subscribe" />
+                <label for="subscribe" class="checkbox-label">Subscribe to our newsletter for series updates</label>
+              </div>
+
+              <button type="submit" class="contact-button">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="contact-info-wrapper">
+            <div class="contact-info-box">
+              <h3>📧 Email</h3>
+              <p><a href="mailto:contact@rottenpotato.com">contact@rottenpotato.com</a></p>
+            </div>
+
+            <div class="contact-info-box">
+              <h3>📱 Phone</h3>
+              <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            </div>
+
+            <div class="contact-info-box">
+              <h3>📍 Location</h3>
+              <p>123 Series Street<br>Entertainment City, EC 12345</p>
+            </div>
+
+            <div class="contact-info-box">
+              <h3>🕐 Hours</h3>
+              <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+            </div>
+
+            <div class="contact-info-box social-box">
+              <h3>🌐 Follow Us</h3>
+              <div class="social-links">
+                <a href="#" class="social-link" title="Facebook">f</a>
+                <a href="#" class="social-link" title="Twitter">𝕏</a>
+                <a href="#" class="social-link" title="Instagram">📷</a>
+                <a href="#" class="social-link" title="LinkedIn">in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-nav">
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="/Index.html" class="nav-link">Main Page</a></li>
+                <li><a href="/who are we & sign in/who_we_are.html" class="nav-link">Who We Are</a></li>
+                <li><a href="/who are we & sign in/sign_in.html" class="nav-link current-page">Sign In</a></li>
+                <li><a href="/who are we & sign in/contact_us.html" class="nav-link">CONTACT US</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="contact_us.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,64 @@
+/* who_we_are.css */
+
+.main-content {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    color: #e0e0e0;
+}
+
+.about-section {
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #f5c518;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.about-section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #f5c518;
+    border-radius: 2px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #c0c0c0;
+}
+
+.about-section p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Ensure footer links highlight the current page */
+.footer-nav .nav-link.current-page {
+    background-color: #f5c518;
+    color: #000000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(245, 197, 24, 0.4);
+    border: 1px solid #f5c518;
+}
+
+.footer-nav .nav-link.current-page::after {
+    width: 80%;
+    background: #000000;
+}
+
